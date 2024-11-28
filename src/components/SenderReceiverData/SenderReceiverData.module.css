@@ -1,0 +1,372 @@
+/* .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.senderField {
+  display: flex;
+  gap: 40px;
+}
+.receiverField {
+  display: flex;
+  gap: 40px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+button {
+  padding: 14px 24px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: #b0b0b0;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #e74c3c;
+  font-size: 12px;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+.field input {
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .form {
+    padding: 15px;
+    max-width: 100%;
+  }
+} */
+/* Базові стилі (Mobile First) */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  /* background-color: #f9f9f9; */
+}
+.react-tel-input .form-control {
+  width: 100% !important;
+}
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: #000;
+}
+.senderTitle {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  text-align: left;
+  color: #000;
+}
+
+.senderField,
+.receiverField {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 6px;
+  width: 100%;
+  box-shadow: 0 2px 5px 0 rgba(110, 110, 110, 0.1),
+    0 8px 8px 0 rgba(110, 110, 110, 0.09),
+    0 19px 11px 0 rgba(110, 110, 110, 0.05),
+    0 33px 13px 0 rgba(110, 110, 110, 0.01),
+    0 52px 14px 0 rgba(110, 110, 110, 0);
+  background: #f8f8f8;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  color: #000;
+}
+.inputCont {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 2px;
+  color: #000;
+}
+
+.input {
+  padding: 8px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 120%;
+  color: #000;
+  background: #d6e0f5;
+  border: none;
+}
+.input:hover,
+.input:focus {
+  background-color: #bdd1fa;
+}
+
+.react-tel-input .form-control {
+  font-family: "Tilda Sans", sans-serif !important;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 120%;
+  color: #000;
+  background: #d6e0f5 !important;
+  border-radius: 5px !important;
+}
+.phoneInput {
+  font-family: "Tilda Sans", sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 12px !important;
+  line-height: 120% !important;
+  color: #000 !important;
+  background: #d6e0f5 !important;
+  height: 30px !important;
+  border: none !important;
+  &&:hover,
+  &&:focus {
+    background-color: #bdd1fa !important;
+  }
+}
+
+.buttonPhone {
+  border-radius: 5px 0 0 5px !important;
+  width: 35px !important;
+  height: 30px !important;
+  box-shadow: 0 2px 5px 0 rgba(110, 110, 110, 0.1),
+    0 8px 8px 0 rgba(110, 110, 110, 0.09),
+    0 19px 11px 0 rgba(110, 110, 110, 0.05),
+    0 33px 13px 0 rgba(110, 110, 110, 0.01),
+    0 52px 14px 0 rgba(110, 110, 110, 0) !important;
+  background: #c8d2e6 !important;
+  border: none !important;
+}
+
+.dropdownPhone {
+  background: #d6e0f5 !important;
+}
+.searchPhone {
+  background: #d6e0f5 !important;
+}
+.buttonPhone.open {
+  background: #d6e0f5 !important;
+}
+.dropdownPhone {
+  background: #d6e0f5 !important;
+}
+.searchClass {
+  background: #d6e0f5 !important;
+}
+.react-tel-input .country-list.country .highlight {
+  background: #d6e0f5 !important;
+}
+.phoneInputContainer {
+  width: 100% !important;
+}
+.phoneInputContainer {
+  font-family: "Tilda Sans", sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 12px !important;
+  line-height: 120%;
+  background: #d6e0f5 !important;
+  color: #000 !important;
+  border-radius: 5px !important;
+  height: 30px;
+}
+
+.button {
+  width: 115px;
+  height: 38px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0184d6;
+}
+.buttonCont {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+  justify-content: right;
+  align-items: center;
+  
+}
+.button:hover {
+  background-color: #0056b3
+}
+
+.button:disabled {
+  background-color: #b0b0b0;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #e74c3c;
+  font-size: 12px;
+  margin-top: 8px;
+  font-weight: 500;
+}
+.nextIcon {
+  fill: black;
+  stroke: black;
+}
+.nextIconUse {
+  fill: black;
+  stroke: black;
+}
+.buttonNext {
+  display: flex;
+  padding: 11px 32px 10px 33px;
+  width: 115px;
+  height: 38px;
+  border-radius: 5px;
+  background: #0184d6;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  font-family: "Tilda Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 16.8px */
+}
+.btnSvg{
+  margin-left: 6px;
+}
+/* Медіа-запит для планшетів (max-width: 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .react-tel-input .form-control {
+    width: 100% !important;
+  }
+  .form {
+    padding: 20px;
+    max-width: 80%;
+  }
+
+  .senderField,
+  .receiverField {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .field {
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+}
+
+/* Медіа-запит для великих екранів (min-width: 769px) */
+@media (min-width: 769px) {
+  .form {
+    padding: 20px 80px;
+    /* max-width: 600px; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  /* .inputCont {
+    display: flex;
+    justify-content: space-between;
+  } */
+  .senderCont {
+    display: flex;
+    gap: 24px;
+  }
+  .senderField,
+  .receiverField {
+    flex-direction: column;
+    gap: 24px;
+    font-size: 20px;
+  }
+
+  .field {
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+
+  .label {
+    font-size: 20px
+  }
+
+  .input {
+    font-size: 18px;
+  }
+  
+  .button {
+    display: flex;
+    font-size: 24px;
+    padding: 14px 30px;
+    width: 179px;
+    height: 50px;
+  }
+  .title {font-size: 36px;}
+  .senderTitle {font-size: 24px;}
+  .phoneInput{font-size: 18px !important;}
+  
+}
